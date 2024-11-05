@@ -34,8 +34,7 @@ public class Food extends JFrame {
                 int php= 0;
                 int total = 0;
 
-//{pizzaCheckBox,burgerCheckBox,friesCheckBox,softDrinksCheckBox,teaCheckBox,sundaeCheckBox};
-                for(JCheckBox hello: btnGroupFoods){
+//{pizzaCheckBox,burgerCheckBox,friesCheckBox,softDrinksCheckBox,teaChe  for(JCheckBox hello: btnGroupFoods){
                     if (pizzaCheckBox.isSelected()){
                         php += 100;
                     }
@@ -54,10 +53,26 @@ public class Food extends JFrame {
                     if (sundaeCheckBox.isSelected()){
                         php+=40;
                     }
-                }
+
                 // {noneRadioButton,a5OffRadioButton,a10OffRadioButton,a15OffRadioButton};
+                double doubledPHP = (double) php;
+                for (JRadioButton hello: BtnGroupDiscounts){
+                    if (hello.isSelected()){
+                        if (hello == noneRadioButton){
 
-
+                            JOptionPane.showMessageDialog(null , "The total is Php " + doubledPHP);
+                        } else if (hello == a5OffRadioButton){
+                            doubledPHP -= (doubledPHP*0.05);
+                            JOptionPane.showMessageDialog(null , "The total is Php " + doubledPHP);
+                        } else if (hello == a10OffRadioButton){
+                            doubledPHP -= (doubledPHP*0.10);
+                            JOptionPane.showMessageDialog(null , "The total is Php " + doubledPHP);
+                        } else if (hello == a15OffRadioButton){
+                            doubledPHP -= (doubledPHP*0.15);
+                            JOptionPane.showMessageDialog(null , "The total is Php " + doubledPHP);
+                        }
+                    }
+                }
             }
         });
     }

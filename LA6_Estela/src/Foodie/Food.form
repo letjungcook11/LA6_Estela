@@ -205,12 +205,6 @@
   <buttonGroups>
     <group name="btnGroupFoods">
       <member id="2d561"/>
-      <member id="2d561"/>
-      <member id="4c6bd"/>
-      <member id="e0122"/>
-      <member id="270c1"/>
-      <member id="f8840"/>
-      <member id="6daa6"/>
     </group>
     <group name="btnGroupDiscounts">
       <member id="5a7f"/>
